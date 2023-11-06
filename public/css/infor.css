@@ -1,0 +1,118 @@
+
+.myacount{
+  padding-top: 80px;
+}
+.infor-left{
+  width:20%;
+  height: 500px;
+  border: 1px solid #838485;
+  border-radius: 24px 0;
+}
+.infor-right{
+  width:70%;
+  height:100vh;
+}
+.name-user{
+  padding-left:40px; 
+  padding-top:20px;
+  display:flex;
+  border-bottom:1px solid;
+}
+.link{
+  padding-top: 40px;
+}
+ul>li{
+  padding-bottom:20px;
+}
+.link-hre{
+  font-size: 15px;
+}
+.alert-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.action{
+  padding-top: 50px;
+  padding-left: 50%;
+}
+.btn-update{
+  padding: 12px 24px;
+  border-radius: 16px 0px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #221f20;
+  color: #f7f8f9;
+  border: 1px solid transparent;
+}
+.btn-update:hover{
+  background-color:#f7f8f9 ;
+  color:#221f20 ;
+  border: 1px solid #221f20;
+}
+#openEditAddress{
+  padding: 12px 24px;
+  border-radius: 16px 0px;
+  font-size: 16px;
+  line-height: 24px;
+
+  background-color: #221f20;
+  color: #f7f8f9;
+  border: 1px solid transparent;
+}
+#openEditAddress:hover{
+  background-color:#f7f8f9 ;
+  color:#221f20 ;
+  border: 1px solid #221f20;
+
+}
+.edit-address{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+.fancy-box {
+  display: none;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-control{
+  width: 50%;
+  margin-left: 25%;
+}
+.active{
+  display: block;
+}
+.btn-address{
+  padding: 12px 24px;
+  border-radius: 16px 0px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: -400px;
+  background-color: #221f20;
+  color: #f7f8f9;
+  border: 1px solid transparent;
+}
+.btn-address:hover{
+  background-color:#f7f8f9 ;
+  color:#221f20 ;
+  border: 1px solid #221f20;
+}
