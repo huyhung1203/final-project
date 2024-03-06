@@ -260,7 +260,7 @@
 
         $("#addBtn").on("click", function() {
             $("#prd_detail tbody").append(`
-     <tr id="R${++rowIdx}">
+        <tr id="R${++rowIdx}">
               <td>
               <input type="number" readonly name="product_detail[${rowIdx}]"  style="width:50px" class="form-control" value="${rowIdx}">
               </td>
