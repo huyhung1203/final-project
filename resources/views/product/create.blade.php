@@ -7,7 +7,7 @@
     <style>
         /* Định dạng cho form */
         .product-form {
-            width: 80%;
+            width: 100%;
             /* Độ rộng của form */
             margin: auto;
             /* Căn giữa form */
@@ -196,7 +196,7 @@
                                             class="form-control" value="1"></td>
                                     <td>
                                         <select class="form-control" name="size[]">
-                                            <option value="##" selected>--chọn--</option>
+                                            <option value="##" selected>-----chọn-----</option>
                                             @foreach ($size as $item)
                                                 <option value="{{ $item->id }}">
                                                     {{ $item->size_name }}
@@ -206,7 +206,7 @@
                                     </td>
                                     <td>
                                         <select class="form-control" name="color[]">
-                                            <option value="##" selected>--chọn--</option>
+                                            <option value="##" selected>-----chọn-----</option>
                                             @foreach ($color as $item)
                                                 <option value="{{ $item->id }}">
                                                     {{ $item->color_name }}
@@ -215,11 +215,11 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <input type="number" class="form-control" style="min-width:400px"
+                                        <input type="number" class="form-control" style="min-width:150px"
                                             name="quantity[]">
                                     </td>
                                     <td>
-                                        <input type="number" class="form-control" style="min-width:400px" name="price[]">
+                                        <input type="number" class="form-control" style="min-width:150px" name="price[]">
                                     </td>
                                     <td>
                                         <a href="javascript:void(0)" class="text-success font-18" title="Add"
