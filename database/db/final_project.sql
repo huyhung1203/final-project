@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 06, 2023 lúc 01:30 PM
+-- Thời gian đã tạo: Th3 11, 2024 lúc 08:43 AM
 -- Phiên bản máy phục vụ: 10.4.22-MariaDB
 -- Phiên bản PHP: 8.1.1
 
@@ -939,7 +939,10 @@ INSERT INTO `images` (`id`, `url`, `product_id`, `created_at`, `updated_at`) VAL
 (30, 'Áo Polo-image-1690419403214.jpg', 10, '2023-07-26 17:56:43', '2023-07-26 17:56:43'),
 (31, 'Áo Sơ Mi-image-1690419566422.jpg', 11, '2023-07-26 17:59:26', '2023-07-26 17:59:26'),
 (32, 'Áo Sơ Mi-image-1690419566508.jpg', 11, '2023-07-26 17:59:26', '2023-07-26 17:59:26'),
-(33, 'Áo Sơ Mi-image-1690419566611.jpg', 11, '2023-07-26 17:59:26', '2023-07-26 17:59:26');
+(33, 'Áo Sơ Mi-image-1690419566611.jpg', 11, '2023-07-26 17:59:26', '2023-07-26 17:59:26'),
+(37, 'Teest-image-1708412111452.png', 13, '2024-02-19 23:55:11', '2024-02-19 23:55:11'),
+(38, 'Teest-image-1708412111256.png', 13, '2024-02-19 23:55:11', '2024-02-19 23:55:11'),
+(39, 'Teest-image-1708412111733.jpg', 13, '2024-02-19 23:55:11', '2024-02-19 23:55:11');
 
 -- --------------------------------------------------------
 
@@ -1090,7 +1093,8 @@ INSERT INTO `products` (`id`, `product_code`, `product_name`, `product_status`, 
 (8, 'QGC01', 'Quần Sooc Jean', 0, '<p>Quần sooc b&ograve; m&agrave;u đen d&aacute;ng regular fit. C&oacute; 5 t&uacute;i. Cạp sử dụng kh&oacute;a v&agrave; khuy kim loại, mặt trước r&aacute;ch c&aacute; t&iacute;nh. M&agrave;u đen&nbsp;hiện đại, ph&ugrave; hợp với thời trang dạo phố.</p>', 'Quần Sooc Jean-thumnail-1690418747464.jpg', 4, 2, '2023-07-26 17:45:47', '2023-07-26 17:45:47'),
 (9, 'SGC02', 'Set áo blazer ngắn tay', 2, '<p>Set đồ&nbsp;bao gồm một chiếc &aacute;o blazer ngắn tay, &aacute;o hai d&acirc;y đi k&egrave;m v&agrave; quần short phong c&aacute;ch. Chất liệu được sử dụng l&agrave; vải linen, tạo cảm gi&aacute;c m&aacute;t mẻ v&agrave; thoải m&aacute;i khi mặc trong những ng&agrave;y h&egrave; n&oacute;ng bức.</p>', 'Set áo blazer ngắn tay-thumnail-1690419054530.jpg', 4, 3, '2023-07-26 17:50:54', '2023-07-26 17:50:54'),
 (10, 'ADR01', 'Áo Polo', 2, '<p>- Chất liệu thun co gi&atilde;n tốt, mềm mại khi sử dụng. Kiểu &aacute;o regular fit&nbsp;ph&ugrave; hợp với v&oacute;c d&aacute;ng người Việt.</p><p>- &Aacute;o&nbsp;cổ đức&nbsp;rộng tho&aacute;ng, cổ liền h&agrave;ng 3 khuy c&agrave;i.</p>', 'Áo Polo-thumnail-1690419403870.jpg', 3, 1, '2023-07-26 17:56:43', '2023-07-26 17:56:43'),
-(11, 'ADR02', 'Áo Sơ Mi', 2, '<p>&Aacute;o sơ mi d&aacute;ng slim fit với độ d&agrave;i vừa phải. Ống tay v&agrave; th&acirc;n &aacute;o &ocirc;m nhẹ. Cổ &aacute;o l&agrave; d&aacute;ng cổ đức được phối c&ugrave;ng một đường line dọc. Cổ tay sử dụng 2 khuy để cố định.</p>', 'Áo Sơ Mi-thumnail-1690419566517.jpg', 3, 1, '2023-07-26 17:59:26', '2023-07-26 17:59:26');
+(11, 'ADR02', 'Áo Sơ Mi', 2, '<p>&Aacute;o sơ mi d&aacute;ng slim fit với độ d&agrave;i vừa phải. Ống tay v&agrave; th&acirc;n &aacute;o &ocirc;m nhẹ. Cổ &aacute;o l&agrave; d&aacute;ng cổ đức được phối c&ugrave;ng một đường line dọc. Cổ tay sử dụng 2 khuy để cố định.</p>', 'Áo Sơ Mi-thumnail-1690419566517.jpg', 3, 1, '2023-07-26 17:59:26', '2023-07-26 17:59:26'),
+(13, 'ABC', 'Teest', 1, '<p>test</p>', 'Teest-thumnail-1708412111955.jpg', 2, 1, '2024-02-19 23:55:11', '2024-02-19 23:55:11');
 
 -- --------------------------------------------------------
 
@@ -1138,7 +1142,10 @@ INSERT INTO `product_details` (`id`, `price`, `product_quantity`, `product_id`, 
 (22, 199000, 5, 10, 1, 3, '2023-07-26 17:56:43', '2023-07-26 17:56:43'),
 (23, 599000, 5, 11, 1, 2, '2023-07-26 17:59:26', '2023-07-26 17:59:26'),
 (24, 699000, 5, 11, 2, 1, '2023-07-26 17:59:26', '2023-07-26 17:59:26'),
-(25, 799000, 70, 11, 3, 1, '2023-07-26 17:59:26', '2023-07-26 17:59:26');
+(25, 799000, 70, 11, 3, 1, '2023-07-26 17:59:26', '2023-07-26 17:59:26'),
+(28, 111, 10, 13, 1, 1, '2024-02-19 23:55:11', '2024-02-19 23:55:11'),
+(29, 112, 15, 13, 2, 2, '2024-02-19 23:55:11', '2024-02-19 23:55:11'),
+(30, 113, 20, 13, 3, 3, '2024-02-19 23:55:11', '2024-02-19 23:55:11');
 
 -- --------------------------------------------------------
 
@@ -11989,7 +11996,7 @@ ALTER TABLE `colors`
 -- AUTO_INCREMENT cho bảng `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT cho bảng `invoices`
@@ -12013,13 +12020,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT cho bảng `product_details`
 --
 ALTER TABLE `product_details`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT cho bảng `sizes`

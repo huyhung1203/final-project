@@ -39,7 +39,6 @@ class LoginController extends Controller
             return Redirect::route('admin.index');
         } 
         else {
-            // dd(bcrypt('123456'));
             return back()->with('fail', 'Email hoặc mật khẩu không đúng');
         }
     }
