@@ -16,8 +16,8 @@ return new class extends Migration
             $table->bigInteger('invoice_id')->unsigned();
             $table->foreign('invoice_id')->references('id')->on('invoices');
             $table->bigInteger('product_detail_id')->unsigned();
-            $table->foreign('product_detal_id')->references('id')->on('product_details')->onDelete('cascade');
-            $table->primary(['invoice_id','product_detal_id']);
+            $table->foreign('product_detail_id')->references('id')->on('product_details')->onDelete('cascade');
+            $table->primary(['invoice_id','product_detail_id']);
         });
     }
 
